@@ -328,7 +328,7 @@ class PluginBuilder extends Module {
 
         switch (strtolower($args['action'])) {
         case 'build':
-            $this->_build('google-oauth2-plugin', $options);
+            $this->_build('fifr-oauth2-plugin', $options);
             break;
 
         case 'hydrate':
@@ -657,7 +657,7 @@ class PluginBuilder extends Module {
         // Write composer.json file
         $composer = <<<EOF
 {
-    "name": "senzil/osticket-google-aouth2-plugin",
+    "name": "senzil/osticket-fifr-aouth2-plugin",
     "repositories": [
         {
             "type": "pear",

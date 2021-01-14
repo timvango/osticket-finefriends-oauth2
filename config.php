@@ -28,8 +28,8 @@ class OauthPluginConfig extends PluginConfig {
             ),
         ));
         return array(
-            'google' => new SectionBreakField(array(
-                'label' => $__('Google Authentication'),
+            'finefriends' => new SectionBreakField(array(
+                'label' => $__('FineFriends Authentication'),
             )),
             'g-client-id' => new TextboxField(array(
                 'label' => $__('Client ID'),
@@ -39,7 +39,7 @@ class OauthPluginConfig extends PluginConfig {
                 'label' => $__('Client Secret'),
                 'configuration' => array('size'=>60, 'length'=>100),
             )),
-            /*auth-oauth: Google: Allow domain whitelisting #122*/
+            /*auth-oauth: FineFriends: Allow domain whitelisting #122*/
             'g-allowed-domains-agents' => new TextboxField(array(
                 'label' => $__('Allowed Domains for Agents'),
                 'configuration' => array('size'=>60, 'length'=>100),

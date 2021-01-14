@@ -1,0 +1,13 @@
+{
+    "name": "senzil/osticket-fifr-aouth2-plugin",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "https://pear.php.net"
+        }
+    ],
+    "require": {"ohmy\/auth":"*"},
+    "config": {
+        "vendor-dir": "lib"
+    }
+}

@@ -9,17 +9,16 @@ class OauthAuthPlugin extends Plugin {
     function bootstrap() {
         $config = $this->getConfig();
 
-        # ----- Google Plus ---------------------
-        $google = $config->get('g-enabled');
-        if (in_array($google, array('all', 'staff'))) {
-            require_once('google.php');
+        $finefriends = $config->get('g-enabled');
+        if (in_array($finefriends, array('all', 'staff'))) {
+            require_once('finefriends.php');
             StaffAuthenticationBackend::register(
-                new GoogleStaffAuthBackend($this->getConfig()));
+                new FineFriendsStaffAuthBackend($this->getConfig()));
         }
-        if (in_array($google, array('all', 'client'))) {
-            require_once('google.php');
+        if (in_array($finefriends, array('all', 'client'))) {
+            require_once('finefriends.php');
             UserAuthenticationBackend::register(
-                new GoogleClientAuthBackend($this->getConfig()));
+                new FineFriendsClientAuthBackend($this->getConfig()));
         }
     }
 }
