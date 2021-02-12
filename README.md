@@ -1,4 +1,4 @@
-osTicket plugin for Google Outh2 Login
+osTicket plugin for FineFriends Outh2 Login
 =========================
 
 Based on core plugin aouth-aouth2
